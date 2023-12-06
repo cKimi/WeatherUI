@@ -13,7 +13,14 @@ struct ContentView: View {
             LinearGradient(gradient: Gradient(colors: [.blue, .white]),
                            startPoint: .topLeading,
                            endPoint: .bottomTrailing)
-                .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("Curitiba, PR")
+                    .font(.system(size: 32, weight: .medium, design: .default))
+                    .foregroundColor(.white)
+                    .padding()
+                Spacer()
+            }
         }
     }
 }
